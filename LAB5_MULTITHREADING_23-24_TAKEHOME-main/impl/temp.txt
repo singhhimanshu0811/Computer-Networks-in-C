@@ -1,0 +1,8 @@
+user1
+-MSGC:hello:user1
+
+user1
+-MSGC:hello:user1
+user1
+-MSGC:hello:user2
+
