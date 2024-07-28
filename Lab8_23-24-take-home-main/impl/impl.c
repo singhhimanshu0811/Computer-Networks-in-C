@@ -10,6 +10,7 @@ unsigned char* serialize(struct packet* pkt) {
     buffer[1]=(unsigned char)(pkt->dest_router & 0xFF);
     buffer[2]=(unsigned char)(pkt->num_entries & 0xFF);
     int idx=3;int dv_idx=0;
+    
     int num_entries=buffer[2];
     while(num_entries--){
         buffer[idx++]=(unsigned char)pkt->distance_vector[dv_idx].target_router;
